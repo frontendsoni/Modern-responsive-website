@@ -469,12 +469,24 @@ html {
 }
 
 @media only screen and (max-width:786px) {
-  .flex-address-bar .social-icons, nav {
+   .address-bar, nav {
     display: none;
   }
 
   .bar-icon {
     display: block;
+    padding-right: 5%;
+  }
+  .banner-image {
+    height: 60vh;
+  }
+  .banner-image .content h1 {
+    font-size: 4rem;
+    margin-top: none;
+  }
+
+  .banner-image .content p {
+    font-size: 1.5rem;
   }
 
   .flex-about {
@@ -508,9 +520,7 @@ html {
   }
 
   .footer-content .contact-info .left-contact, .right-contact { 
-    width: 100%;
-    margin: 0 auto;
-    
+    max-width: 100%;
   }
 
   .footer-content .contact-info .left-contact {
