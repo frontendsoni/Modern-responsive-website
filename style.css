@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+/* common css start */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden ;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* common css end */
+
+/* header start */
+
+  /* address bar */
+.address-bar {
+  background-color: brown;
+  width: 100%;
+  height: 3rem;
+}
+
+.flex-address-bar {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+.flex-address-bar .social-icons a {
+  color: white;
+  padding: 0 1.2rem;
+}
+
+.bar-icon {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* Navigation bar */
+.navigation-menu {
+  width: 100%;
+  height: 7rem;
+  background-color: whitesmoke;
+  
+}
+
+.flex-navigation {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* for logo */
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  line-height: 2.8rem;
+  margin-left: 3rem;
+}
+
+.logo a {
+   color: #191919;
+}
+
+.logo a span {
+  color: brown;
+  font-size: 2.7rem;
+  
+}
+
+/* for nav links */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-items {
+  padding: 0 3.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+.navbar .nav-items .navlinks {
+  color: #191919;
+}
+
+.navbar .nav-items:hover .navlinks {
+  color: brown;
+}
+
+/* header end */
+
+/* banner section start*/
+.banner-image {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("./images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-image .content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+.banner-image .content h1{
+	font-size: 7rem;
+	margin-top: 8rem;
+	text-transform: uppercase;
+}
+.banner-image .content p{
+	margin: 2rem 0;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+.banner-image .content button{
+	width: 18rem;
+	padding: 1.5rem 0;
+	text-align: center;
+	margin: 2rem 1rem;
+	border-radius: 1.2rem;
+	font-weight: bold;
+	border: 0.3rem solid brown;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+  letter-spacing: 0.2rem;
+}
+.banner-image .content button span{
+	background: brown;
+	height: 100%;
+	width: 0%;
+	border-radius: 1rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-image .content button:hover span{
+	width: 100%;
+}
+.banner-image .content button:hover{
+	border: none;
+}
+/* banner section end*/
+/* About section start */
+#about {
+  
+  padding: 8rem 0;
+}
+
+.top-heading{
+  color:#191919;
+  text-align: center;
+  padding-bottom: 8rem;
+  font-size: 3rem;
+}
+
+.flex-about {
+  width: 100%;
+  display: flex;
+  
+}
+
+.flex-about .about-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-right: 2rem;
+
+}
+
+.flex-about .about-img img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-about .about-text {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left:2rem;
+  padding: 0 1.5rem;
+}
+
+.flex-about .about-text .about-heading {
+  font-size: 3rem;
+  margin-bottom:2rem ;
+  letter-spacing: 0.2rem;
+}
+.flex-about .about-text .about-heading .brown-text {
+  color: brown;
+}
+.flex-about .about-text .about-text-content {
+  font-size: 1.5rem;
+  line-height: 4rem;
+  padding: 0 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.flex-about .about-text .readmore-btn {
+  margin-top: 3rem;
+  
+}
+
+.flex-about .about-text .readmore-btn button {
+  width: 16rem;
+	padding: 1.5rem 0;
+	text-align: center;
+	font-weight: bold;
+	border: 0.3rem solid brown;
+	background: transparent;
+	color: #191919;
+	cursor: pointer;
+  letter-spacing: 0.25rem;
+}
+
+.flex-about .about-text .readmore-btn button:hover {
+  background: brown;
+  color: white;
+}
+/* About section end */
+/* Services section start */
+#services {
+  padding: 8rem 0 12rem 0;
+  background-color: whitesmoke;
+}
+
+.card-item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 4rem 2.5rem;
+}
+
+.card-item .card-item-content {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-item .card-item-content img {
+  width: 100%;
+  height: auto;
+}
+
+.card-item .card-item-content a h4 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #191919;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.card-item .card-item-content:hover h4 {
+  color: brown;
+}
+
+.card-item .card-item-content {
+  animation: backmotioncards 0.4s linear;
+  animation-fill-mode: forwards;
+}
+.card-item .card-item-content:hover {
+  animation: motioncards 0.4s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backmotioncards {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes motioncards {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* Services section start */
+/* footer section start */
+.footer-content {
+  width: 100%;
+  background-color: #191919;
+  padding: 5rem 8rem;
+}
+
+.footer-content .bottom-heading {
+  font-size: 2rem;
+  color: brown;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.footer-content .contact-info, .contact-detail {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  color: white;
+}
+
+.footer-content .contact-info .left-contact, .right-contact {
+  flex: 0 0 50%; 
+  max-width: 50%;
+}
+.footer-content .contact-info .contact-detail {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.footer-content .contact-info i {
+  font-size: 3.5rem;
+  padding-right: 2.5rem;
+  color: brown;
+}
+
+.footer-content .contact-info h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-content .contact-info .right-contact form .f-flex {
+  display: flex;
+}
+
+.footer-content .contact-info .right-contact form .f-flex .f-name, .f-mail{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.footer-content .contact-info .right-contact form input {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+}
+.footer-content .contact-info .right-contact form .f-flex .f-name {
+  padding-right: 1.5rem;
+}
+
+.footer-content .contact-info .right-contact form .row {
+  padding-bottom: 1.5rem;
+}
+
+.footer-content .contact-info .right-contact form textarea {
+  width: 100%;
+  padding: 1rem 0 0 1rem;
+  height: 13rem;
+}
+
+.footer-content .contact-info .right-contact form .msg-btn button {
+  width: 16rem;
+	padding: 1.5rem 0;
+	text-align: center;
+	font-weight: bold;
+	background: brown;
+	color: white;
+	cursor: pointer;
+  letter-spacing: 0.25rem;
+}
+/* footer section end */
+
+/* media query for small screens */
+@media only screen and (max-width:1096px){
+  .flex-address-bar , .navbar .nav-items{
+    font-size: 1.3rem;
+  }
+  .logo  {
+   font-size: 2.2rem;
+  }
+
+  .logo a span {
+    font-size: 2.4rem;
+   }
+   .banner-image .content h1 {
+     font-size: 6rem;
+   }
+   .banner-image .content p {
+     font-size: 1.3rem;
+   }
+
+   .banner-image .content button{
+    width: 15rem;
+    padding: 1.2rem 0;
+  }
+
+  .flex-about .about-text .about-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem ;
+  }
+
+  .flex-about .about-text .about-text-content {
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+
+  } 
+
+  .flex-about .about-text .readmore-btn button {
+    width: 13rem;
+    padding: 1.1rem 0;
+  }
+
+  .flex-about .about-text .readmore-btn {
+    margin-top: 1.7rem;
+    
+  }
+
+  .footer-content .contact-info .contact-detail {
+    margin-bottom: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .footer-content .contact-info i {
+    font-size: 2.5rem;
+  }
+
+  .footer-content .contact-info .right-contact form .row {
+    padding-bottom: 1.2rem;
+  }
+
+  .footer-content .contact-info .right-contact form input {
+    height: 3rem;
+  }
+
+  .footer-content .contact-info .right-contact form textarea {
+    height: 10rem;
+  }
+
+  .footer-content .contact-info .right-contact form .msg-btn button {
+    width: 14rem;
+    padding: 1.2rem 0;
+    text-align: center;
+    font-weight: bold;
+    background: brown;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media only screen and (max-width:786px) {
+  .flex-address-bar .social-icons, nav {
+    display: none;
+  }
+
+  .bar-icon {
+    display: block;
+  }
+
+  .flex-about {
+    width: 100%;
+    display: block;
+    
+  }
+  
+  .flex-about .about-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 2rem;
+  }
+
+  .flex-about .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left:2rem;
+    padding: 1rem 0 1.5rem;
+  }
+
+  .card-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4rem 2.5rem;
+  }
+
+  .footer-content .contact-info {
+    display: block;
+    
+  }
+
+  .footer-content .contact-info .left-contact, .right-contact { 
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+
+  .footer-content .contact-info .left-contact {
+    padding-bottom: 3rem;
+  }
+}
