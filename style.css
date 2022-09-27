@@ -27,30 +27,6 @@ html {
 /* common css end */
 
 /* header start */
-
-  /* address bar */
-.address-bar {
-  background-color: brown;
-  width: 100%;
-  height: 3rem;
-}
-
-.flex-address-bar {
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.8rem;
-  color: white;
-  letter-spacing: 0.3rem;
-  font-weight: 500;
-}
-
-.flex-address-bar .social-icons a {
-  color: white;
-  padding: 0 1.2rem;
-}
-
 .bar-icon {
   font-size: 2rem;
   display: none;
@@ -59,14 +35,18 @@ html {
 
 /* Navigation bar */
 .navigation-menu {
+  position:fixed;
+  top:0;
+  left:0;	
   width: 100%;
-  height: 7rem;
+  height: 8rem;
   background-color: whitesmoke;
+  z-index:10;	
   
 }
 
 .flex-navigation {
-  height: 7rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,10 +91,17 @@ html {
   color: brown;
 }
 
+.navbar .nav-items .active {
+  color: brown;
+}
+
+
 /* header end */
 
 /* banner section start*/
 .banner-image {
+  top: 8rem;
+  left: 0;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("./images/banner.jpg");
